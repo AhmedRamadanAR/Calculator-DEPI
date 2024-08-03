@@ -4,202 +4,278 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/black"
     tools:context=".MainActivity">
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    >
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="120.dp"
-        android:layout_marginTop="90.dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.dp"
         android:text="22+1"
+        android:layout_weight="1"
+
         android:textColor="@color/white"
         android:textSize="50.sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-
+</LinearLayout>
     <LinearLayout
+        android:layout_weight="1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60.dp"
-
-        >
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:background="@drawable/roundedshape"
-            style="@style/Button1"
-            android:text="%"
-             />
+        android:orientation="vertical"
 
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:text="("
-            android:background="@drawable/roundedshape"
-            style="@style/Button1"
-           />
-
-        <androidx.appcompat.widget.AppCompatButton
-
-            android:text=")"
-            android:background="@drawable/roundedshape"
-            style="@style/Button1" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:text="+/-"
-            android:background="@drawable/roundedshape"
-            style="@style/Button2"
-
-           />
-
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
         android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60.dp"
+            android:layout_weight="1"
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:background="@drawable/roundedshape"
-            style="@style/Button3"
-            android:text="7"
-            />
+            >
 
+            <androidx.appcompat.widget.AppCompatButton
+                android:background="@drawable/roundedshape"
+                style="@style/Button1"
+                android:text="%"
+                android:layout_weight="1"
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:text="8"
-            android:background="@drawable/roundedshape"
-            style="@style/Button3"
-            />
-
-        <androidx.appcompat.widget.AppCompatButton
-
-            android:text="9"
-            android:background="@drawable/roundedshape"
-            style="@style/Button3" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:text="*"
-            android:background="@drawable/roundedshape"
-            style="@style/Button2"
-
-            />
+                />
 
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatButton
+                android:text="("
+                android:layout_weight="1"
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:background="@drawable/roundedshape"
-            style="@style/Button3"
-            android:text="4"
-            />
+                android:background="@drawable/roundedshape"
+                style="@style/Button1"
 
+                />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:text="5"
-            android:background="@drawable/roundedshape"
-            style="@style/Button3"
-            />
+            <androidx.appcompat.widget.AppCompatButton
 
-        <androidx.appcompat.widget.AppCompatButton
+                android:text=")"
+                android:layout_weight="1"
 
-            android:text="6"
-            android:background="@drawable/roundedshape"
-            style="@style/Button3" />
+                android:background="@drawable/roundedshape"
+                style="@style/Button1" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:text="/"
-            android:background="@drawable/roundedshape"
-            style="@style/Button2"
+            <androidx.appcompat.widget.AppCompatButton
+                android:text="+/-"
+                android:layout_weight="1"
 
-            />
+                android:background="@drawable/roundedshape"
+                style="@style/Button2"
+
+                />
 
 
-    </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            >
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_weight="1"
+
+                android:background="@drawable/roundedshape"
+                style="@style/Button3"
+                android:text="7"
+                />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:text="8"
+                android:layout_weight="1"
+
+                android:background="@drawable/roundedshape"
+                style="@style/Button3"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_weight="1"
+
+                android:text="9"
+                android:background="@drawable/roundedshape"
+                style="@style/Button3" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:text="*"
+                android:layout_weight="1"
+
+                android:background="@drawable/roundedshape"
+                style="@style/Button2"
+
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            >
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:background="@drawable/roundedshape"
+                style="@style/Button3"
+                android:text="4"
+                android:layout_weight="1"
+
+                />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:text="5"
+                android:background="@drawable/roundedshape"
+                style="@style/Button3"
+                android:layout_weight="1"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:text="6"
+                android:background="@drawable/roundedshape"
+                style="@style/Button3"
+                android:layout_weight="1"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:text="/"
+                android:background="@drawable/roundedshape"
+                style="@style/Button2"
+                android:layout_weight="1"
+
+
+                />
+
+
+        </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+
             >
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
 
-                <androidx.appcompat.widget.AppCompatButton
-                    android:background="@drawable/roundedshape"
-                    style="@style/Button3"
-                    android:text="1"
-                    />
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
 
+                    >
 
-                <androidx.appcompat.widget.AppCompatButton
-                    android:text="2"
-                    android:background="@drawable/roundedshape"
-                    style="@style/Button3"
-                    />
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:background="@drawable/roundedshape"
+                        style="@style/Button3"
+                        android:text="1"
+                        android:layout_weight="1"
 
-                <androidx.appcompat.widget.AppCompatButton
-
-                    android:text="3"
-                    android:background="@drawable/roundedshape"
-                    style="@style/Button3" />
-
+                        />
 
 
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:text="2"
+                        android:background="@drawable/roundedshape"
+                        style="@style/Button3"
+                        android:layout_weight="1"
+
+                        />
+
+                    <androidx.appcompat.widget.AppCompatButton
+
+                        android:text="3"
+                        android:background="@drawable/roundedshape"
+                        style="@style/Button3"
+                        android:layout_weight="1"
+
+                        />
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    >
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:background="@drawable/roundedshape"
+                        style="@style/Button3"
+                        android:text="C"
+                        android:layout_weight="1"
+
+                        />
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:text="0"
+                        android:background="@drawable/roundedshape"
+                        style="@style/Button3"
+                        android:layout_weight="1"
+
+                        />
+
+                    <androidx.appcompat.widget.AppCompatButton
+
+                        android:text="."
+
+                        android:background="@drawable/roundedshape"
+                        style="@style/Button3"
+                        android:layout_weight="1"
+
+                        />
+
+
+
+
+                </LinearLayout>
 
             </LinearLayout>
-
-            <LinearLayout
+            <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent"
+                style="@style/Button2"
+                android:background="@drawable/roundedshape"
+                android:text="="
+                android:layout_weight="1"
 
-                <androidx.appcompat.widget.AppCompatButton
-                    android:background="@drawable/roundedshape"
-                    style="@style/Button3"
-                    android:text="C"
-                    />
+                >
 
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:text="0"
-                    android:background="@drawable/roundedshape"
-                    style="@style/Button3"
-                    />
-
-                <androidx.appcompat.widget.AppCompatButton
-
-                    android:text="."
-
-                    android:background="@drawable/roundedshape"
-                    style="@style/Button3" />
-
-
-
-
-            </LinearLayout>
-
+            </androidx.appcompat.widget.AppCompatButton>
         </LinearLayout>
-<androidx.appcompat.widget.AppCompatButton
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    style="@style/Button2"
-    android:background="@drawable/roundedshape"
-    android:text="="
-    >
 
-</androidx.appcompat.widget.AppCompatButton>
+
     </LinearLayout>
+
+
 
 
 </LinearLayout>
